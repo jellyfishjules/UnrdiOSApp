@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UnrdiOS
+import Unrd
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,10 +16,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let session = URLSession(configuration: .default)
+        let client = URLSessionHTTPClient(session: session)
+        let loader = StoryLoader(client: client, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!)
+        let storyController = StoryUIComposer.composeStoryWith(storyLoader: loader)
+        
+        window?.rootViewController = storyController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
