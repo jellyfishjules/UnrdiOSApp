@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		8414DA96254F6FE200C165E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414DA95254F6FE200C165E0 /* AppDelegate.swift */; };
 		8414DA98254F6FE200C165E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414DA97254F6FE200C165E0 /* SceneDelegate.swift */; };
-		8414DA9A254F6FE200C165E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414DA99254F6FE200C165E0 /* ViewController.swift */; };
 		8414DA9D254F6FE200C165E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414DA9B254F6FE200C165E0 /* Main.storyboard */; };
 		8414DA9F254F6FE200C165E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414DA9E254F6FE200C165E0 /* Assets.xcassets */; };
 		8414DAA2254F6FE200C165E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414DAA0254F6FE200C165E0 /* LaunchScreen.storyboard */; };
-		8414DAAD254F6FE200C165E0 /* UnrdiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414DAAC254F6FE200C165E0 /* UnrdiOSAppTests.swift */; };
 		8414DAC1254F751800C165E0 /* Unrd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC0254F751800C165E0 /* Unrd.framework */; };
 		8414DAC2254F751800C165E0 /* Unrd.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC0254F751800C165E0 /* Unrd.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8414DAC5254F751C00C165E0 /* UnrdiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC4254F751C00C165E0 /* UnrdiOS.framework */; };
@@ -50,13 +48,11 @@
 		8414DA92254F6FE200C165E0 /* UnrdiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnrdiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414DA95254F6FE200C165E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8414DA97254F6FE200C165E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8414DA99254F6FE200C165E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8414DA9C254F6FE200C165E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8414DA9E254F6FE200C165E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8414DAA1254F6FE200C165E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8414DAA3254F6FE200C165E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8414DAA8254F6FE200C165E0 /* UnrdiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnrdiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8414DAAC254F6FE200C165E0 /* UnrdiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnrdiOSAppTests.swift; sourceTree = "<group>"; };
 		8414DAAE254F6FE200C165E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8414DAC0254F751800C165E0 /* Unrd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Unrd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414DAC4254F751C00C165E0 /* UnrdiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnrdiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +103,6 @@
 			children = (
 				8414DA95254F6FE200C165E0 /* AppDelegate.swift */,
 				8414DA97254F6FE200C165E0 /* SceneDelegate.swift */,
-				8414DA99254F6FE200C165E0 /* ViewController.swift */,
 				8414DA9B254F6FE200C165E0 /* Main.storyboard */,
 				8414DA9E254F6FE200C165E0 /* Assets.xcassets */,
 				8414DAA0254F6FE200C165E0 /* LaunchScreen.storyboard */,
@@ -119,7 +114,6 @@
 		8414DAAB254F6FE200C165E0 /* UnrdiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				8414DAAC254F6FE200C165E0 /* UnrdiOSAppTests.swift */,
 				841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */,
 				8414DAAE254F6FE200C165E0 /* Info.plist */,
 			);
@@ -237,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8414DA9A254F6FE200C165E0 /* ViewController.swift in Sources */,
 				8414DA96254F6FE200C165E0 /* AppDelegate.swift in Sources */,
 				8414DA98254F6FE200C165E0 /* SceneDelegate.swift in Sources */,
 			);
@@ -247,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8414DAAD254F6FE200C165E0 /* UnrdiOSAppTests.swift in Sources */,
 				841D72D8254F8DF5009C395D /* SceneDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
