@@ -68,3 +68,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+final class MainQueueDispatchDecorator: StoryLoading {
+    private let decoratee: StoryLoading
+    
+    init(_ decoratee: StoryLoading) {
+        self.decoratee = decoratee
+    }
+    
+    func load(completion: @escaping (LoadStoryResult) -> Void) {
+        decoratee.load { [weak self] result in
+            self?.guaranteeMainThread {
+                completion(result)
+            }
+        }
+    }
+    
+    private func guaranteeMainThread(_ work: @escaping () -> Void) {
+        if Thread.isMainThread {
+            work()
+        } else {
+            DispatchQueue.main.async(execute: work)
+        }
+    }
+}
