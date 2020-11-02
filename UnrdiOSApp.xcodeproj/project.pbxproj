@@ -17,6 +17,7 @@
 		8414DAC5254F751C00C165E0 /* UnrdiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC4254F751C00C165E0 /* UnrdiOS.framework */; };
 		8414DAC6254F751C00C165E0 /* UnrdiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC4254F751C00C165E0 /* UnrdiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		841D72D8254F8DF5009C395D /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */; };
+		841D72E6254F96F6009C395D /* AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D72E5254F96F6009C395D /* AcceptanceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8414DAC0254F751800C165E0 /* Unrd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Unrd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414DAC4254F751C00C165E0 /* UnrdiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnrdiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
+		841D72E5254F96F6009C395D /* AcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptanceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8414DA95254F6FE200C165E0 /* AppDelegate.swift */,
-				8414DA97254F6FE200C165E0 /* SceneDelegate.swift */,
+				841D72E4254F961D009C395D /* Composition Root */,
 				8414DA9B254F6FE200C165E0 /* Main.storyboard */,
 				8414DA9E254F6FE200C165E0 /* Assets.xcassets */,
 				8414DAA0254F6FE200C165E0 /* LaunchScreen.storyboard */,
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */,
+				841D72E5254F96F6009C395D /* AcceptanceTests.swift */,
 				8414DAAE254F6FE200C165E0 /* Info.plist */,
 			);
 			path = UnrdiOSAppTests;
@@ -127,6 +130,14 @@
 				8414DAC0254F751800C165E0 /* Unrd.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841D72E4254F961D009C395D /* Composition Root */ = {
+			isa = PBXGroup;
+			children = (
+				8414DA97254F6FE200C165E0 /* SceneDelegate.swift */,
+			);
+			path = "Composition Root";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841D72E6254F96F6009C395D /* AcceptanceTests.swift in Sources */,
 				841D72D8254F8DF5009C395D /* SceneDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

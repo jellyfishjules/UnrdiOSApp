@@ -14,7 +14,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
+    private lazy var httpClient: HTTPClient = {
+         URLSessionHTTPClient(session: URLSession(configuration: .default))
+     }()
+    
+    public convenience init(httpClient: HTTPClient) {
+         self.init()
+         self.httpClient = httpClient
+     }
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let _ = (scene as? UIWindowScene) else { return }
@@ -23,9 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func configureWindow() {
-        let session = URLSession(configuration: .default)
-        let client = URLSessionHTTPClient(session: session)
-        let loader = StoryLoader(client: client, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!)
+        let loader = StoryLoader(client: httpClient, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!)
         let storyController = StoryUIComposer.composeStoryWith(storyLoader: loader)
         
         window?.rootViewController = storyController
