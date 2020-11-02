@@ -19,6 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let _ = (scene as? UIWindowScene) else { return }
         
+      configureWindow()
+    }
+    
+    func configureWindow() {
         let session = URLSession(configuration: .default)
         let client = URLSessionHTTPClient(session: session)
         let loader = StoryLoader(client: client, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!)

@@ -18,6 +18,7 @@
 		8414DAC2254F751800C165E0 /* Unrd.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC0254F751800C165E0 /* Unrd.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8414DAC5254F751C00C165E0 /* UnrdiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC4254F751C00C165E0 /* UnrdiOS.framework */; };
 		8414DAC6254F751C00C165E0 /* UnrdiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8414DAC4254F751C00C165E0 /* UnrdiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		841D72D8254F8DF5009C395D /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		8414DAAE254F6FE200C165E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8414DAC0254F751800C165E0 /* Unrd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Unrd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414DAC4254F751C00C165E0 /* UnrdiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnrdiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				8414DAAC254F6FE200C165E0 /* UnrdiOSAppTests.swift */,
+				841D72D7254F8DF5009C395D /* SceneDelegateTests.swift */,
 				8414DAAE254F6FE200C165E0 /* Info.plist */,
 			);
 			path = UnrdiOSAppTests;
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8414DAAD254F6FE200C165E0 /* UnrdiOSAppTests.swift in Sources */,
+				841D72D8254F8DF5009C395D /* SceneDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
