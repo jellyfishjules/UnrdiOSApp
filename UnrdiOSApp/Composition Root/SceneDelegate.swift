@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func configureWindow() {
-        let loader = StoryLoader(client: httpClient, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!)
+        let loader = MainQueueDispatchDecorator(StoryLoader(client: httpClient, url: URL(string: "https://s3-eu-west-1.amazonaws.com/unrd-scratch/resp.json")!))
         let storyController = StoryUIComposer.composeStoryWith(storyLoader: loader)
         
         window?.rootViewController = storyController
