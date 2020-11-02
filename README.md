@@ -1,6 +1,6 @@
 # UnrdiOSApp
 
-This app use embedded frameworks. These frameworks can be found here https://github.com/jellyfishjules/Unrd.
+This app uses embedded frameworks. These frameworks can be found here https://github.com/jellyfishjules/Unrd.
 
 The UI is extremely simple and shows a story name along with a short summary, with a video playing in the background.
 
